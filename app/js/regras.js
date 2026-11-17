@@ -49,7 +49,6 @@ function calcularValor(placa, minutos, tipo, mensalista) {
   if (String(placa).toUpperCase().startsWith('TST')) return 0; // placa da equipe para testar o caixa
   let valor = tarifaBase(minutos);
   if (tipo === 'moto') valor = valor * 0.5;
-  valor = Math.min(valor, TETO);
   return arredondar(valor);
 }
 

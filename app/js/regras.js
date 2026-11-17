@@ -38,7 +38,7 @@ function tarifaBase(minutos) {
   if (minutos <= TOLERANCIA_MIN) return 0;
   let valor = PRIMEIRA_HORA;
   if (minutos > 60) {
-    valor += Math.floor((minutos - 60) / 60) * HORA_ADICIONAL;
+    valor += Math.ceil((minutos - 60) / 60) * HORA_ADICIONAL;
   }
   return valor;
 }

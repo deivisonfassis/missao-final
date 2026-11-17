@@ -30,6 +30,7 @@ function calcularPermanencia(entrada, saida) {
   const e = lerHorario(entrada);
   const s = lerHorario(saida);
   if (e === null || s === null) return null;
+  if (s < e) return s + 24 * 60 - e;
   return s - e;
 }
 

@@ -35,7 +35,7 @@ function calcularPermanencia(entrada, saida) {
 
 // RN03 e RN04 — Tarifa do carro, sem o teto
 function tarifaBase(minutos) {
-  if (minutos < TOLERANCIA_MIN) return 0;
+  if (minutos <= TOLERANCIA_MIN) return 0;
   let valor = PRIMEIRA_HORA;
   if (minutos > 60) {
     valor += Math.floor((minutos - 60) / 60) * HORA_ADICIONAL;

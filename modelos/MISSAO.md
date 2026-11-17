@@ -14,15 +14,17 @@
 
 ## Fase 1 — Plano de teste
 
-**Escopo:** o que vamos testar e o que fica de fora.
+**Escopo:** Verificar se o sistema EstacionaAí funciona corretamente, respeitando todas as regras de negócio relacionadas à validação de placas, horários, tolerância, cálculo de tarifas, mensalistas, motos e pernoite
 
 **Ambiente:** navegador e versão, sistema operacional.
 
-**Riscos:** as 3 regras que mais podem dar prejuízo ao estacionamento, e por quê.
+**Riscos:**
 
-1.
-2.
-3.
+1. Tarifas: cobrança de valores incorretos, causando perda financeira.
+
+2. Mensalistas: cobrança indevida ou falta de cobrança.
+
+3. Tolerância e pernoite: aplicação incorreta das regras, gerando prejuízo ao estacionamento.
 
 **Casos de teste** (8 ou mais; pelo menos 3 de valor limite). Técnicas: VL valor limite · PE partição de equivalência · FL fluxo.
 
